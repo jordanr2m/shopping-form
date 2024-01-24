@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    background-color: hotpink; /* Make prettier */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Shopping Form */
+.shopping-list {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    width: 500px;
+    margin: 4rem 0;
+}
+
+.shopping {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.shopping-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.shopping-item {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.shopping-item input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.shopping-item input[type="checkbox"]:checked+.itemName {
+    opacity: 0.5;
+}
+
+.shopping-item button {
+    padding: 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.shopping-item button:hover {
+    transform: scale(1.4);
+}
+
+/* Jordan's styles - come back & make prettier */
+button[type="submit"]{
+    font-size: 1.25rem;
+    background-color: turquoise;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+button[type="submit"],
+input {
+    padding: 0.5rem;
+}
+
+input {
+    border: 1px solid rgb(220, 216, 216);
+}
