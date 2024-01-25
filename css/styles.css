@@ -39,12 +39,12 @@ body {
 }
 
 .shopping-item {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 1rem;
     align-items: center;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid rgb(220, 216, 216);
 }
 
 .shopping-item input[type="checkbox"] {
@@ -57,9 +57,12 @@ body {
 
 .shopping-item button {
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: transform 0.2s;
+    border: 2px solid transparent;
+    color: white;
+    background-color: rgb(255, 48, 152);
 }
 
 .shopping-item button:hover {
@@ -67,6 +70,11 @@ body {
 }
 
 /* Jordan's styles - come back & make prettier */
+input[id="item"]:focus {
+    border: 2px solid hotpink;
+    outline: none;
+}
+
 button[type="submit"]{
     font-size: 1.25rem;
     background-color: turquoise;
